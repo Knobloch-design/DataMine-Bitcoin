@@ -27,5 +27,14 @@ cursor.execute("SELECT * FROM testbase")
 tabletest = cursor.fetchall()
 for rows in tabletest:
     print(rows)
+#comment
+with open('marketPrice', newline='') as myFile:  # get first line of data to with titles of columns
+    lines = csv.reader(myFile, delimiter=',')
+    count = 0
+    for line1 in lines: # this could be more efficient
+        print(line1)
+
+
+
 
 #The second command creates a table named Tracks with a text column named title and an integer column named plays.
